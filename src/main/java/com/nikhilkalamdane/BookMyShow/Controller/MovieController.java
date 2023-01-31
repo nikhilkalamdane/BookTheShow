@@ -33,6 +33,8 @@ public class MovieController {
         return new ResponseEntity<>(movieNameAndIdObject, HttpStatus.FOUND);
     }
 
+
+
     @GetMapping("getAll")
     public ResponseEntity<?> getAllMovies(){
         return movieService.getAllMovies();

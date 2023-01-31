@@ -106,6 +106,9 @@ public class TicketServiceImpl implements TicketService {
         return new ResponseEntity<>(ticketRepository.findAll(), HttpStatus.ACCEPTED);
     }
 
+
+
+
     public String convertListOfSeatsEntityToString(List<ShowSeatsEntity> bookedSeats){
         String str = "";
         for(ShowSeatsEntity showSeatsEntity : bookedSeats){
